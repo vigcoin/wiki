@@ -15,3 +15,26 @@ VIGCoin的总量是1亿个，并且永远不会增发。
 2. 实现币的交易能力，以及币币交易能力，降低中心化交易所对货币的操纵
 3. 实现更加友好的货币
 4. 实现加密币的循环生态。
+
+# 钱包
+
+VIGCoin的钱包源码：
+https://github.com/vigcoin/wallet
+会开发的小伙伴可以自行编译。
+
+不会开发的小伙伴可以下载64位的钱包。
+
+[Windows 64 钱包](https://github.com/vigcoin/wallet/releases/download/1.0.0-a1/vigcoin-windows-64.zip)
+
+
+[Linux 64 钱包](https://github.com/vigcoin/wallet/releases/download/1.0.0-a1/vigcoin-linux-64.zip)
+
+
+# 挖矿
+
+VIGCoin的产生是通过挖矿实现的。
+目前VIGCoin是基于cryptnight算法来实现的。
+所以所有支持cryptonight算法的挖矿软件都可以用来挖VIGCoin.
+
+推荐使用xmr-stak
+
