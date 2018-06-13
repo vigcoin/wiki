@@ -11,7 +11,7 @@ VIGCoin的总量是1亿个，并且永远不会增发。
 
 # VIGCoin基于POW
 
-算法是Cryptonight算法，由于ASIC机器研发的关系，未来可能会不断的更新算法，确定算力不被垄断。
+算法是基于cryptonight算法，由于ASIC机器算力垄断的关系，未来肯定会更新算法，确保算力不被垄断。推荐基于CPU或者GPU进行挖矿。
 
 # VIGCoin的目标是什么？
 
