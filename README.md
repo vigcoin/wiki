@@ -39,6 +39,24 @@ https://github.com/vigcoin/wallet
 
 (欢迎小伙伴提供其它版本的编译结果，将提供100币作为奖励，并在以后的运营中终身享受分红）
 
+## 钱包使用
+
+### 一定要备份钱包
+
+1. 钱包启动后会默认创建一个钱包，这个时候钱包的地址在不同的平台是不一样的。所以你最好自己保存一个钱包文件。
+2. 出于安全原因，钱包每次更新后会重新生成，所以如果不小心断电，钱包的内容可能会来不及保存。造成钱包损坏，所以在使用钱包前，一定要做好备份。
+
+备份钱包的命令：文件-》备份钱包。
+
+### 找到钱包地址
+
+钱包地址位于：钱包"接收"栏。
+VIG COIN钱包一定是B开头的，挖矿时一定要注意。
+比如：BKC4AgG14PnQyfpEeEQSNSYjhBo5237Yf1pScL4c9rQ4LQTngRWHeEuJcSmW8cc6AjA3vgGSLR3odRtphDGnQAVHEuJN8p9
+是一个正确的地址。
+比如：AKC4AgG14PnQyfpEeEQSNSYjhBo5237Yf1pScL4c9rQ4LQTngRWHeEuJcSmW8cc6AjA3vgGSLR3odRtphDGnQAVHEuJN8p9
+是一个错误的地址（A开关）
+
 # 挖矿
 
 VIGCoin的产生是通过挖矿实现的。
@@ -46,6 +64,17 @@ VIGCoin的产生是通过挖矿实现的。
 所以所有支持cryptonight算法的挖矿软件都可以用来挖VIGCoin.
 
 推荐使用xmr-stak
+
+## xmr-stak挖矿
+
+项目地址：
+[https://github.com/fireice-uk/xmr-stak](https://github.com/fireice-uk/xmr-stak)
+
+[WIN64](https://github.com/fireice-uk/xmr-stak/releases/download/2.4.5/xmr-stak-win64.zip)
+
+挖矿时填入正确的参数即可，参数可以在这里找到：
+
+http://pools.vigcoin.org/#/getting_started
 
 # 贡献
 
