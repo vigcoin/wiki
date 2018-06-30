@@ -55,7 +55,7 @@ VIG COIN钱包一定是B开头的，挖矿时一定要注意。
 比如：BKC4AgG14PnQyfpEeEQSNSYjhBo5237Yf1pScL4c9rQ4LQTngRWHeEuJcSmW8cc6AjA3vgGSLR3odRtphDGnQAVHEuJN8p9
 是一个正确的地址。
 比如：AKC4AgG14PnQyfpEeEQSNSYjhBo5237Yf1pScL4c9rQ4LQTngRWHeEuJcSmW8cc6AjA3vgGSLR3odRtphDGnQAVHEuJN8p9
-是一个错误的地址（A开关）
+是一个错误的地址（A开头）
 
 # 挖矿
 
