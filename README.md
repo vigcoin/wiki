@@ -1,32 +1,32 @@
-# VIGCoin wiki
-VIGCoin的知识库
+# VIG Coin wiki
+VIG Coin的知识库
 
-# VIGCoin是什么？
+# VIG Coin是什么？
 
-VIGCoin是开源的加密币项目，它类似于比特币，旨在解决货币电子化，去中心化，实现货币发行量的相对恒定等功能。
+VIG Coin是开源的加密币项目，它类似于比特币，旨在解决货币电子化，去中心化，实现货币发行量的相对恒定等功能。
 
-# VIGCoin的总量是多少？
+# VIG Coin的总量是多少？
 
-VIGCoin的总量是1亿个，并且永远不会增发。预留20%的币用于未来对币的运营，开发，推广。其它币全部投放入矿池。
+VIG Coin的总量是1亿个，并且永远不会增发。预留20%的币用于未来对币的运营，开发，推广。其它币全部投放入矿池。
 
-# VIGCoin基于POW
+# VIG Coin基于POW
 
 算法是基于cryptonight算法，由于ASIC机器算力垄断的关系，未来肯定会更新算法，确保算力不被垄断。推荐基于CPU或者GPU进行挖矿。
 
-# VIGCoin的目标是什么？
+# VIG Coin的目标是什么？
 
 1. 基于比特币的去中心化理念，并努力在机制上保障去中心化
 2. 实现币的交易能力，以及币币交易能力，降低中心化交易所对货币的操纵
 3. 实现更加友好的货币
 4. 实现加密币的循环生态。
 
-# VIGCoin不是应用平台，不会考虑应用的开发
+# VIG Coin不是应用平台，不会考虑应用的开发
 
-VIGCoin旨在推动加密币技术的普及，而不是推动去中心化的应用的普及。如果未来VIGCoin的四个目标都达成后，VIGCoin才有可能开新的项目去做去中心化的应用。
+VIG Coin旨在推动加密币技术的普及，而不是推动去中心化的应用的普及。如果未来VIGCoin的四个目标都达成后，VIGCoin才有可能开新的项目去做去中心化的应用。
 
 # 钱包
 
-VIGCoin的钱包源码：
+VIG Coin的钱包源码：
 https://github.com/vigcoin/wallet
 会开发的小伙伴可以自行编译。
 
@@ -51,7 +51,7 @@ https://github.com/vigcoin/wallet
 ### 找到钱包地址
 
 钱包地址位于：钱包"接收"栏。
-VIG COIN钱包一定是B开头的，挖矿时一定要注意。
+VIG Coin钱包一定是B开头的，挖矿时一定要注意。
 比如：BKC4AgG14PnQyfpEeEQSNSYjhBo5237Yf1pScL4c9rQ4LQTngRWHeEuJcSmW8cc6AjA3vgGSLR3odRtphDGnQAVHEuJN8p9
 是一个正确的地址。
 比如：AKC4AgG14PnQyfpEeEQSNSYjhBo5237Yf1pScL4c9rQ4LQTngRWHeEuJcSmW8cc6AjA3vgGSLR3odRtphDGnQAVHEuJN8p9
@@ -59,9 +59,9 @@ VIG COIN钱包一定是B开头的，挖矿时一定要注意。
 
 # 挖矿
 
-VIGCoin的产生是通过挖矿实现的。
-目前VIGCoin是基于cryptnight算法来实现的。
-所以所有支持cryptonight算法的挖矿软件都可以用来挖VIGCoin.
+VIG Coin的产生是通过挖矿实现的。
+目前VIG Coin是基于cryptnight算法来实现的。
+所以所有支持cryptonight算法的挖矿软件都可以用来挖VIG Coin.
 
 推荐使用xmr-stak
 
@@ -103,7 +103,7 @@ VIG Coin的发展离不开所有贡献者的参与。
 对于矿池服务器的要求：
 1. 系统为Ubuntu 16.04 版本或者安装有docker服务的linux主机
 2. 权限一般要求是sudo, 或者是docker组的普通用户
-3. 空闲空间至少有1G以上，未来随着.vigcoin的块高增加需要增加空间
+3. 空闲空间至少有1G以上，未来随着`.vigcoin`目录里的块高增加需要增加空间
 
 ## 开发者
 
@@ -131,7 +131,7 @@ ICO与各种空气币的泛滥就是一个证明。
 
 # 去中心化
 
-去中心化不同的人有不同的理解，下面我将几个VIG COIN对去中心化的理解归纳如下：
+去中心化不同的人有不同的理解，下面我将几个VIG Coin对去中心化的理解归纳如下：
 
 1. 节点创建的自由
 2. 节点的100%独立性
