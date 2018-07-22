@@ -9,6 +9,11 @@ VIG Coin是开源的加密币项目，它类似于比特币，旨在解决货币
 
 VIG Coin的总量是1亿个，并且永远不会增发。预留20%的币用于未来对币的运营，开发，推广。其它币全部投放入矿池。
 
+
+# VIG Coin的源码在那里？
+
+VIG Coin的源码在[https://github.com/vigcoin/coin](https://github.com/vigcoin/coin)
+
 # VIG Coin基于POW
 
 算法是基于cryptonight算法，由于ASIC机器算力垄断的关系，未来肯定会更新算法，确保算力不被垄断。推荐基于CPU或者GPU进行挖矿。
