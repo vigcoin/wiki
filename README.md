@@ -81,6 +81,10 @@ VIG Coin的产生是通过挖矿实现的。
 
 http://pools.vigcoin.org/#/getting_started
 
+## 官方矿池
+
+http://pools.vigcoin.org/
+
 # 贡献
 
 VIG Coin的发展离不开所有贡献者的参与。
