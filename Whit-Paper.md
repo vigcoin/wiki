@@ -1,7 +1,7 @@
 VIG COIN:一个快速，高效，私密，去中心化的点对点的电子货币循环与交易系统
-作者: calidion
-电子邮件： calidion@gmail.com
-www.vigcoin.org
+作者: calidion  
+电子邮件： calidion@gmail.com  
+www.vigcoin.org  
 
 简介：一个实用的点对点加密币方案。比特币的出现导致加密货币的火热。
 但是比特币同样暴露了几个问题：
