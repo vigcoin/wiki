@@ -1,7 +1,7 @@
 VIG COIN:一个快速，高效，私密，去中心化的点对点的电子货币循环与交易系统  
 作者: calidion  
 电子邮件： calidion@gmail.com  
-官网：www.vigcoin.org  
+官网：https://www.vigcoin.org  
 
 ## 简介
 
