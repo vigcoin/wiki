@@ -85,6 +85,10 @@ http://pools.vigcoin.org/#/getting_started
 
 http://pools.vigcoin.org/
 
+## 矿池的搭建
+
+[详情](./Pool.md)
+
 # 贡献
 
 VIG Coin的发展离不开所有贡献者的参与。
