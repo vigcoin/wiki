@@ -168,7 +168,8 @@ export VIGCOIN_WALLET_PORT=19802
 4. 运行矿池
 
 ```
-docker run -d -e VIGCOIN_DAEMON_PORT=$VIGCOIN_DAEMON_PORT       \
+docker run -d                                                   \
+-e VIGCOIN_DAEMON_PORT=$VIGCOIN_DAEMON_PORT                     \
 -e VIGCOIN_WALLET_PORT=$VIGCOIN_WALLET_PORT                     \
 -e VIGCOIN_EXTRA=$VIGCOIN_EXTRA                                 \
 -e PASSWORD=$VIGCOIN_WALLET_PASSWORD                            \
@@ -231,6 +232,16 @@ root@2ef0ee4f04e6:/pool# kill 13
 会看到5555,6666,7777,8888端口会被打开。
 
 这个时候矿池的程序已经正常运行了。
+
+10. 自动随服务器重启
+
+在命令行第一行后面添加即可：
+
+```
+--restart unless-stopped                                        \
+```
+
+11. 通过`docker ps`查看容器ID， 通过`docker stop 容器ID`可以关闭矿池的运行。
 
 ## 完成
 
