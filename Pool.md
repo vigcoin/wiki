@@ -20,6 +20,7 @@ git clone --depth 1 https://github.com/vigcoin/docker-folder.git .
 sudo apt-get install docker.io
 sudo usermod -aG docker ${USER}
 ```
+注意第一次添加时需要退出一次shell。
 
 ## 三、下载Docker Image `vigcoin/core`并运行
 
@@ -34,7 +35,7 @@ root@50a7f15d5913:/#
 
 ## 四、通过容器命令创建钱包
 
-1. `cd app`进行vigcoin应用目录
+1. `cd wallet/`进行vigcoin应用目录
 ```
 root@50a7f15d5913:/# cd wallet/
 ```
