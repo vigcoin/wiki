@@ -11,7 +11,8 @@ Ubuntu16.04
 1. git获取相关基础文件
 
 ```
-git clone --depth 1 https://github.com/vigcoin/docker-folder.git .
+git clone --depth 1 https://github.com/vigcoin/docker-folder.git
+cd docker-folder
 ```
 
 ## 二、安装Docker
