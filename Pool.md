@@ -2,7 +2,7 @@
 
 ## 支持环境
 
-Ubuntu16.04  AMD64
+docker Ubuntu:16.04
 
 > 其它环境的问题官方暂不作支持。
 
@@ -190,7 +190,7 @@ docker run -d                                                   \
 -v $VIGCOIN_HOME/root/.vigcoin:/root/.vigcoin                   \
 -v $VIGCOIN_HOME/pool/config:/pool/config                       \
 -v $VIGCOIN_HOME/www/config:/www/config                         \
-vigcoin/pool
+vigcoin/one
 ```
 
 5. 等待同步完成,目前的数据大小约在360多M。大约需要几十分钟同步。
@@ -198,7 +198,7 @@ vigcoin/pool
 ```
 docker ps
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                                                                                                                                                                                  NAMES
-2ef0ee4f04e6        vigcoin/pool        "/usr/bin/supervisord"   8 seconds ago       Up 6 seconds        0.0.0.0:5555->5555/tcp, 0.0.0.0:6666->6666/tcp, 0.0.0.0:7777->7777/tcp, 0.0.0.0:8080->8080/tcp, 0.0.0.0:8119->8119/tcp, 0.0.0.0:8888->8888/tcp, 0.0.0.0:19800-19802->19800-19802/tcp   hungry_jennings
+2ef0ee4f04e6        vigcoin/one        "/usr/bin/supervisord"   8 seconds ago       Up 6 seconds        0.0.0.0:5555->5555/tcp, 0.0.0.0:6666->6666/tcp, 0.0.0.0:7777->7777/tcp, 0.0.0.0:8080->8080/tcp, 0.0.0.0:8119->8119/tcp, 0.0.0.0:8888->8888/tcp, 0.0.0.0:19800-19802->19800-19802/tcp   hungry_jennings
 ```
 7. 登录运行中的docker容器。
 ```
