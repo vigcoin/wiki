@@ -161,10 +161,11 @@ export VIGCOIN_HOME=`(pwd)`
 ```
 即可。
 
-3. 设置端口
+3. 设置端口和默认扩展
 ```
 export VIGCOIN_DAEMON_PORT=19801
 export VIGCOIN_WALLET_PORT=19802
+export VIGCOIN_EXTRA=""
 ```
 
 4. 运行矿池
