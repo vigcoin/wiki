@@ -23,8 +23,8 @@ VIG Coin的源码在[https://github.com/vigcoin/coin](https://github.com/vigcoin
 
 | 区块高度 | 算法 |
 | ------------- | ------------- |
-| 1-19799 | cryptonight |
-| 19800- | cryptonight_v7 |
+| 1-197999 | cryptonight |
+| 198000- | cryptonight_v7 |
 
 VIG反对ASIC造成的算力垄断以不赞成POW造成的资源浪费。
 所以未来会基于POR（Proof of Requests)来生产币或者获得收益。
