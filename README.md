@@ -17,9 +17,18 @@ VIG Coin的总量是1亿个，并且永远不会增发。预留20%的币用于�
 
 VIG Coin的源码在[https://github.com/vigcoin/coin](https://github.com/vigcoin/coin)
 
-# VIG Coin基于POW
+# VIG Coin当前基于POW，未来会基于POR
 
-算法是基于cryptonight算法，由于ASIC机器算力垄断的关系，未来肯定会更新算法，确保算力不被垄断。推荐基于CPU或者GPU进行挖矿。
+算法：
+
+| 区块高度 | 算法 |
+| ------------- | ------------- |
+| 1-19799 | cryptonight |
+| 19800- | cryptonight_v7 |
+
+VIG反对ASIC造成的算力垄断以不赞成POW造成的资源浪费。
+所以未来会基于POR（Proof of Requests)来生产币或者获得收益。
+也就是一种基于服务器请求服务的共识算法。
 
 # VIG Coin的目标是什么？
 
