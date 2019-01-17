@@ -1,3 +1,4 @@
+[[白皮书](./White-Paper.md)]
 [[演进路线](./Roadmap.md)] [[矿池搭建](./Pool.md)]
 
 # VIG Coin wiki
