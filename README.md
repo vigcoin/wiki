@@ -1,3 +1,5 @@
+[[演进路线](./Roadmap.md)] [[矿池搭建](./Pool.md)]
+
 # VIG Coin wiki
 VIG Coin的知识库
 
