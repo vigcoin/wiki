@@ -1,3 +1,5 @@
+
+# <img src="./logo.png" alt="alt text" width="30px" height="30px"> The VIG Coin Project 
 [[白皮书](./White-Paper.md)]
 [[演进路线](./Roadmap.md)] [[矿池搭建](./Pool.md)]
 
