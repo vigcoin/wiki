@@ -275,6 +275,32 @@ vigcoin/one
 
 11. 通过`docker ps`查看容器ID， 通过`docker stop 容器ID`可以关闭矿池的运行。
 
+12. 
+
+```
+docker run -it                                                  \
+-e VIGCOIN_DAEMON_PORT=$VIGCOIN_DAEMON_PORT                     \
+-e VIGCOIN_WALLET_PORT=$VIGCOIN_WALLET_PORT                     \
+-e VIGCOIN_EXTRA=$VIGCOIN_EXTRA                                 \
+-e PASSWORD=$VIGCOIN_WALLET_PASSWORD                            \
+-p 19800:19800                                                  \
+-p 19801:19801                                                  \
+-p 19802:19802                                                  \
+-p 5555:5555                                                    \
+-p 6666:6666                                                    \
+-p 7777:7777                                                    \
+-p 8888:8888                                                    \
+-p 8080:8080                                                    \
+-p 8119:8119                                                    \
+-v $VIGCOIN_HOME/wallet:/wallet                                 \
+-v $VIGCOIN_HOME/data:/data                                     \
+-v $VIGCOIN_HOME/log:/var/log                                   \
+-v $VIGCOIN_HOME/root/.vigcoin:/root/.vigcoin                   \
+-v $VIGCOIN_HOME/pool/config:/pool/config                       \
+-v $VIGCOIN_HOME/www/config:/www/config                         \
+vigcoin/one
+```
+
 ## 完成
 
 这样你的矿池就可以进行挖矿了。
