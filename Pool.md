@@ -249,7 +249,7 @@ root@2ef0ee4f04e6:/pool# kill 13
 即
 
 ```
-docker run -d --restart unless-stopped                          \                                               \
+docker run -d --restart unless-stopped                          \
 -e VIGCOIN_DAEMON_PORT=$VIGCOIN_DAEMON_PORT                     \
 -e VIGCOIN_WALLET_PORT=$VIGCOIN_WALLET_PORT                     \
 -e VIGCOIN_EXTRA=$VIGCOIN_EXTRA                                 \
