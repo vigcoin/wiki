@@ -23,11 +23,11 @@ sudo usermod -aG docker ${USER}
 ```
 注意第一次添加时需要退出一次shell。
 
-## 三、下载Docker Image `vigcoin/core`并运行
+## 三、下载Docker Image `vigcoin/one`并运行
 
 ```
-docker pull vigcoin/core
-docker run -it -v `(pwd)`/wallet:/wallet vigcoin/core
+docker pull vigcoin/one
+docker run -it -v `(pwd)`/wallet:/wallet vigcoin/one /bin/bash
 ```
 正常你会看到提示符的变化：
 ```
@@ -171,7 +171,7 @@ export VIGCOIN_EXTRA=""
 4. 运行矿池
 
 ```
-docker pull vigcoin/core
+docker pull vigcoin/one
 
 docker run -d                                                   \
 -e VIGCOIN_DAEMON_PORT=$VIGCOIN_DAEMON_PORT                     \
