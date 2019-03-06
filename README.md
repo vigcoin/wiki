@@ -1,7 +1,7 @@
 
 # <img src="./logo.png" alt="alt text" width="30px" height="30px"> The VIG Coin Project 
 [[白皮书](./White-Paper.md)]
-[[演进路线](./Roadmap.md)] [[矿池搭建](./Pool.md)]
+[[演进路线](./Roadmap.md)] [[矿池搭建](./Pool.md)][[节点与钱包服务搭建](./vigcoin-node-and-wallet-service-setup.md)]
 
 # VIG Coin wiki
 VIG Coin的知识库
