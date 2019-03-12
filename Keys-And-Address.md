@@ -23,3 +23,29 @@ Above we discussed the different ways private keys are derived; the rest of the 
 # online generator
 
 [generator](https://xmr.llcoins.net/addresstests.html)
+
+
+
+# Cryptonote Key And Address
+[https://cryptonote.org/cns/cns007.txt](https://cryptonote.org/cns/cns007.txt)
+
+
+翻译：
+
+# CryptoNote密钥与地址
+
+## 摘要
+
+这个文档是CryptoNote标准（一个点对点的匿名支付系统）的一部分。它定义了不同的在CryptoNote里使用的用户密钥，以及如何将地址编码成为一个字符数字组成的字符串。
+
+## 1. 介绍
+CryptoNote标准在两个场景里会提到`密钥`:
+1. 在交易中使用的一次性私钥或者公钥。txout_to_key是CryptoNote基本的交易类型。
+2. 用户永久保存在个人的CryptoNote钱包的密钥。它们用来检测进来的交易和承继环签名里的一次性私钥。
+
+每个用户默认有两个永久密钥对（即同时包含公钥，私钥）。这两个密钥对的公钥部分组成了用户的地址。
+
+
+
+
+
