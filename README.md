@@ -3,13 +3,14 @@
 
 # 必读
 
-[[理念](./philosophy.md)]
-[[白皮书](./White-Paper.md)]
-[[演进路线](./Roadmap.md)] 
+1. [[理念](./philosophy.md)]
+2. [[白皮书](./White-Paper.md)]
+3. [[演进路线](./Roadmap.md)] 
 
+# 技术指导
 
-
-[[矿池搭建](./Pool.md)][[节点与钱包服务搭建](./vigcoin-node-and-wallet-service-setup.md)]
+1. [[矿池搭建](./Pool.md)]
+2. [[节点与钱包服务搭建](./vigcoin-node-and-wallet-service-setup.md)]
 
 # VIG Coin wiki
 VIG Coin的知识库
