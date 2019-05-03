@@ -12,6 +12,27 @@
 1. [[矿池搭建](./Pool.md)]
 2. [[节点与钱包服务搭建](./vigcoin-node-and-wallet-service-setup.md)]
 
+# 开发者指南
+
+## 旧代码
+
+1. [[节点核心代码](https://github.com/vigcoin/coin)]
+2. [[钱包代码](https://github.com/vigcoin/wallet)]
+
+## 新代码（目标迁移后代码）
+
+新代码的目标是将底层代码的绝大多数功能从C/C++迁移到Rust语言，上层使用Node.js+Typescript，并通过Neon库的方式对接Rust。
+
+从而实现C/C++=>Rust=>Node.js=>Typescript的生态链对接，并以Rust和Typescript为核心开发环境展开相关的功能开发。
+
+
+1. [[Rust版的cryptonight核心代码库(带有C/C++代码的Rust库)](https://github.com/cryptonote-rust)]
+2. [[Neon中间层（主要通过Rust代码输出node.js的接口)](https://github.com/vigcoin/neon)]
+2. [[WebApi(基于neon中间层的node.js接口，组织上层的JSON RPC，提供相关的加密币接口，目前处于第一阶段，主要提供客户端钱包所需要的API接口)](https://github.com/vigcoin/webapi)]
+3. [[Android 钱包](https://github.com/vigcoin/android-wallet)]
+4. [[Electron 钱包](https://github.com/vigcoin/electron-wallet)]
+
+
 # VIG Coin wiki
 VIG Coin的知识库
 
