@@ -136,7 +136,7 @@ export VIGCOIN_EXTRA=""
 4. 运行节点/钱包服务
 
 ```
-docker pull vigcoin/core
+docker pull vigcoin/coind
 
 docker run -d                                                   \
 -e VIGCOIN_DAEMON_PORT=$VIGCOIN_DAEMON_PORT                     \
@@ -212,7 +212,7 @@ docker stop 2ef0ee4f04e6
 ```
 这里注意要使用stop，这样数据才可以安全的保存
 
-11. 
+11. 如果需要交互运行，可以执行下面的内容。
 
 ```
 docker run -it                                                  \
