@@ -90,10 +90,7 @@ https://github.com/vigcoin/wallet
 
 不会开发的小伙伴可以下载64位的钱包。
 
-[Windows 64 钱包](https://github.com/vigcoin/wallet/releases/download/1.0.0-a1/vigcoin-windows-64.zip)
-
-
-[Linux 64 钱包](https://github.com/vigcoin/wallet/releases/download/1.0.0-a1/vigcoin-linux-64.zip)
+钱包下载： https://vigcoin.org/#wallet
 
 (欢迎小伙伴提供其它版本的编译结果，将提供100币作为奖励，并在以后的运营中终身享受分红）
 
