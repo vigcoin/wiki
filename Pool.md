@@ -171,7 +171,7 @@ export VIGCOIN_EXTRA=""
 4. 运行矿池
 
 ```
-docker pull vigcoin/core
+docker pull vigcoin/one
 
 docker run -d                                                   \
 -e VIGCOIN_DAEMON_PORT=$VIGCOIN_DAEMON_PORT                     \
