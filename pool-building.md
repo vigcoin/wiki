@@ -45,7 +45,7 @@ git clone https://github.com/vigcoin/pool-site.git pool-frontend
 curl -o- https://raw.githubusercontent.com/calidion/chinese-noder-the-easy-way/master/install.sh?ver=1.1 | bash
 export NVM_DIR="$HOME/.nvm" && \. "$NVM_DIR/nvm.sh"
 ```
-2. 安装 node 版本 (当前默认是v8.11.2)
+2. 安装 node 版本 (默认安装了v12，但是应该无法工作，须安装node.js v8.11.2）
 ```
 nvm install v8.11.2 && nvm use v8.11.2
 ```
@@ -138,3 +138,53 @@ export VIGCOIN_WALLET_PORT=19802
 # 设置其它信息
 export VIGCOIN_EXTRA="--enable-cors"   # 允许远程的RPC
 ```
+
+### 把脚本放入到crontab启动
+
+1. 获取vigcoin deamon启动脚本命令
+```
+echo "`pwd`/app/vigcoind --rpc-bind-ip=0.0.0.0  $VIGCOIN_EXTRA"
+```
+结果效果：
+```
+/home/vigcoin/vigcoin/app/vigcoind --rpc-bind-ip=0.0.0.0  --enable-cors
+```
+2. 获取vigcoin 钱包服务脚本命令
+```
+echo "`pwd`/app/simplewallet --wallet-file `pwd`/wallet/mywallet.wallet --password $VIGCOIN_WALLET_PASSWORD --daemon-port $VIGCOIN_DAEMON_PORT --rpc-bind-port $VIGCOIN_WALLET_PORT --rpc-bind-ip=0.0.0.0 $VIGCOIN_EXTRA"
+```
+结果效果：
+```
+/home/vigcoin/vigcoin/app/simplewallet --wallet-file /home/vigcoin/vigcoin/wallet/mywallet.wallet --password 12345678 --daemon-port 19801 --rpc-bind-port 19802 --rpc-bind-ip=0.0.0.0 --enable-cors
+```
+3. 获取pool server的启动脚本命令
+```
+echo "`which node` `which pm2` start `pwd`/pool-server/init.js"
+```
+结果效果：
+```
+/home/vigcoin/.nvm/versions/node/v12.22.1/bin/node /home/vigcoin/.nvm/versions/node/v12.22.1/bin/pm2 start /home/vigcoin/vigcoin/pool-server/init.js
+```
+4. 获取启动pool frontend的脚本命令
+```
+echo "`which node` `which http-server` `pwd`/pool-frontend/"
+```
+结果效果：
+```
+/home/vigcoin/.nvm/versions/node/v12.22.1/bin/node /home/vigcoin/.nvm/versions/node/v12.22.1/bin/http-server /home/vigcoin/vigcoin/pool-frontend/
+```
+#### 编辑crontab将结果放入启动脚本
+```
+crontab -e
+```
+将下面的内容编辑进去
+```
+@reboot /home/vigcoin/vigcoin/app/vigcoind --rpc-bind-ip=0.0.0.0  --enable-cors
+@reboot /home/vigcoin/vigcoin/app/simplewallet --wallet-file /home/vigcoin/vigcoin/wallet/mywallet.wallet --password 12345678 --daemon-port 19801 --rpc-bind-port 19802 --rpc-bind-ip=0.0.0.0 --enable-cors
+@reboot /home/vigcoin/.nvm/versions/node/v12.22.1/bin/node /home/vigcoin/.nvm/versions/node/v12.22.1/bin/pm2 start /home/vigcoin/vigcoin/pool-server/init.js
+@reboot /home/vigcoin/.nvm/versions/node/v12.22.1/bin/node /home/vigcoin/.nvm/versions/node/v12.22.1/bin/http-server /home/vigcoin/vigcoin/pool-frontend/
+```
+保存退出。
+
+然后重启服务器。
+等数据同步完成即可开启挖矿了。
