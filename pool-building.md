@@ -54,3 +54,42 @@ nvm install v8.11.2 && nvm use v8.11.2
 npm install -g http-server
 npm install -g pm2
 ```
+### 创建钱包（如果已经创建可以忽略)
+```
+mkdir wallet
+../app/simplewallet
+```
+这时会出现对话框:
+```
+root@ecec9a07593f:/wallet# /app/simplewallet
+vigcoin wallet v1.2.0.1()
+Dir: `/root/.vigcoin` not found! Creating...
+Success creating dir: /root/.vigcoin.
+Creating File: /root/.vigcoin/blockchainindices.dat.
+Nor 'generate-new-wallet' neither 'wallet-file' argument was specified.
+What do you want to do?
+[O]pen existing wallet, [G]enerate new wallet file or [E]xit.
+```
+选择[G]生成新的钱包，并出现如下信息，其中`Generated new wallet`后面的`BHT6WECJdbiEuP37egnYv8GMDTHpMcCNhXxTJsBpvXa715BaMeUyiRRcMdXZqKEGxVG7LEEcMGuXwavZxaK74LZK8v6hrhD`就是你需要保存的钱包地址。
+```
+G
+Specify wallet file name (e.g., wallet.bin).
+Wallet file name: mywallet    # 输入钱包名   
+password: *********           # 输入钱包密码
+Error: wallet failed to connect to daemon (http://localhost:19801).
+Generated new wallet: BHT6WECJdbiEuP37egnYv8GMDTHpMcCNhXxTJsBpvXa715BaMeUyiRRcMdXZqKEGxVG7LEEcMGuXwavZxaK74LZK8v6hrhD
+view key: bbaf1770e78f6f2178e61cd169a3eb79ea3184d33a7b110ae0ed84285a62cf04
+**********************************************************************
+Your wallet has been generated.
+Use "help" command to see the list of available commands.
+Always use "exit" command when closing simplewallet to save
+current session's state. Otherwise, you will possibly need to synchronize 
+your wallet again. Your wallet key is NOT under risk anyway.
+**********************************************************************
+```
+创建钱包成功后执行`ls`，会看到`wallet`目录产生了两个文件：
+```
+mywallet.address  mywallet.wallet
+```
+请立即备份好这个文件，最好通过zip等压缩软件打包。因为目前服务器代码不够稳定，容易出现钱包被破坏的情况。
+
