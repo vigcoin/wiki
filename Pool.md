@@ -20,7 +20,7 @@ git clone https://github.com/vigcoin/coin.git
 2. 构建程序
 ```
 cd coin
-git checkout 7cf1f76cf9e4e52ef3a8c574024469db095fe591
+git checkout pool
 ./build-release.sh
 ```
 3. 导出编译结果
