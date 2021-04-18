@@ -126,3 +126,15 @@ var DOMAIN = "localhost";
 ```
 var DOMAIN = "pools.vigcoin.org";
 ```
+### 配置环境变量
+```
+# 设置钱包密码
+export VIGCOIN_WALLET_PASSWORD=#YOUR_PASSWORD
+
+# 设置服务器代码
+export VIGCOIN_DAEMON_PORT=19801
+# 设置钱包端口
+export VIGCOIN_WALLET_PORT=19802
+# 设置其它信息
+export VIGCOIN_EXTRA="--enable-cors"   # 允许远程的RPC
+```
