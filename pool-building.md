@@ -93,3 +93,18 @@ mywallet.address  mywallet.wallet
 ```
 请立即备份好这个文件，最好通过zip等压缩软件打包。因为目前服务器代码不够稳定，容易出现钱包被破坏的情况。
 
+### 配置矿池文件
+修改配置文件
+```
+cp pool-server/example-config.json pool-server/config/config.js
+vi pool-server/config/config.json
+```
+修改22行：
+```
+"poolAddress": "填写你的钱包地址",
+```
+
+修改109行:
+```
+"password": "填写你的后台登录密码"
+```
