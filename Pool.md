@@ -48,6 +48,9 @@ export NVM_DIR="$HOME/.nvm" && \. "$NVM_DIR/nvm.sh"
 2. 安装 node 版本 (默认安装了v12，但是应该无法工作，须安装node.js v8.11.2）
 ```
 nvm install v8.11.2 && nvm use v8.11.2
+cd pool-server
+npm install
+cd ..
 ```
 3. 安装web服务器`http-server`和矿池服务持久运行工具`pm2`
 ```
@@ -136,7 +139,7 @@ export VIGCOIN_DAEMON_PORT=19801
 # 设置钱包端口
 export VIGCOIN_WALLET_PORT=19802
 # 设置其它信息
-export VIGCOIN_EXTRA="--enable-cors"   # 允许远程的RPC
+export VIGCOIN_EXTRA="--enable-cors *"   # 允许远程的RPC
 ```
 
 ### 把脚本放入到crontab启动
@@ -147,7 +150,7 @@ echo "`pwd`/app/vigcoind --rpc-bind-ip=0.0.0.0  $VIGCOIN_EXTRA"
 ```
 结果效果：
 ```
-/home/vigcoin/vigcoin/app/vigcoind --rpc-bind-ip=0.0.0.0  --enable-cors
+/home/vigcoin/vigcoin/app/vigcoind --rpc-bind-ip=0.0.0.0  --enable-cors *
 ```
 2. 获取vigcoin 钱包服务脚本命令
 ```
@@ -163,7 +166,7 @@ echo "`which node` `which pm2` start `pwd`/pool-server/init.js"
 ```
 结果效果：
 ```
-/home/vigcoin/.nvm/versions/node/v12.22.1/bin/node /home/vigcoin/.nvm/versions/node/v12.22.1/bin/pm2 start /home/vigcoin/vigcoin/pool-server/init.js
+/home/vigcoin/.nvm/versions/node/v8.11.2/bin/node /home/vigcoin/.nvm/versions/node/v8.11.2/bin/pm2 start /home/vigcoin/vigcoin/pool-server/pool-server/init.js
 ```
 4. 获取启动pool frontend的脚本命令
 ```
@@ -171,7 +174,7 @@ echo "`which node` `which http-server` `pwd`/pool-frontend/"
 ```
 结果效果：
 ```
-/home/vigcoin/.nvm/versions/node/v12.22.1/bin/node /home/vigcoin/.nvm/versions/node/v12.22.1/bin/http-server /home/vigcoin/vigcoin/pool-frontend/
+/home/vigcoin/.nvm/versions/node/v8.11.2/bin/node /home/vigcoin/.nvm/versions/node/v8.11.2/bin/http-server /home/vigcoin/vigcoin/pool-server/pool-frontend/
 ```
 #### 编辑crontab将结果放入启动脚本
 ```
@@ -179,10 +182,10 @@ crontab -e
 ```
 将下面的内容编辑进去
 ```
-@reboot /home/vigcoin/vigcoin/app/vigcoind --rpc-bind-ip=0.0.0.0  --enable-cors
+@reboot /home/vigcoin/vigcoin/app/vigcoind --rpc-bind-ip=0.0.0.0  --enable-cors *
 @reboot /home/vigcoin/vigcoin/app/simplewallet --wallet-file /home/vigcoin/vigcoin/wallet/mywallet.wallet --password 12345678 --daemon-port 19801 --rpc-bind-port 19802 --rpc-bind-ip=0.0.0.0 --enable-cors
-@reboot /home/vigcoin/.nvm/versions/node/v12.22.1/bin/node /home/vigcoin/.nvm/versions/node/v12.22.1/bin/pm2 start /home/vigcoin/vigcoin/pool-server/init.js
-@reboot /home/vigcoin/.nvm/versions/node/v12.22.1/bin/node /home/vigcoin/.nvm/versions/node/v12.22.1/bin/http-server /home/vigcoin/vigcoin/pool-frontend/
+@reboot /home/vigcoin/.nvm/versions/node/v8.11.2/bin/node /home/vigcoin/.nvm/versions/node/v8.11.2/bin/pm2 start /home/vigcoin/vigcoin/pool-server/pool-server/init.js
+@reboot /home/vigcoin/.nvm/versions/node/v8.11.2/bin/node /home/vigcoin/.nvm/versions/node/v8.11.2/bin/http-server /home/vigcoin/vigcoin/pool-server/pool-frontend/
 ```
 保存退出。
 
