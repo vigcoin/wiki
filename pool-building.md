@@ -108,3 +108,21 @@ vi pool-server/config/config.json
 ```
 "password": "填写你的后台登录密码"
 ```
+### 配置矿池网站
+
+所在位置：
+
+```
+pool-frontend/config/config.js
+```
+
+修改第1行:
+```
+var DOMAIN = "localhost";
+```
+将localhost修改成你的服务器的域名或者IP
+
+比如修改成是：`pools.vigcoin.org`
+```
+var DOMAIN = "pools.vigcoin.org";
+```
