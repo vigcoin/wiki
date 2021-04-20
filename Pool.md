@@ -99,7 +99,7 @@ mywallet.address  mywallet.wallet
 ### 配置矿池文件
 修改配置文件
 ```
-cp pool-server/example-config.json pool-server/config/config.js
+cp pool-server/example-config.json pool-server/config/config.json
 vi pool-server/config/config.json
 ```
 修改22行：
@@ -116,7 +116,7 @@ vi pool-server/config/config.json
 所在位置：
 
 ```
-pool-frontend/config/config.js
+pool-frontend/config/config.json
 ```
 
 修改第1行:
@@ -188,6 +188,11 @@ crontab -e
 @reboot /home/vigcoin/.nvm/versions/node/v8.11.2/bin/node /home/vigcoin/.nvm/versions/node/v8.11.2/bin/http-server /home/vigcoin/vigcoin/pool-server/pool-frontend/
 ```
 保存退出。
+
+### 安装redis-server
+```
+sudo apt install redis-server
+```
 
 然后重启服务器。
 等数据同步完成即可开启挖矿了。
